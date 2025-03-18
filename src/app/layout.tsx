@@ -9,9 +9,16 @@ export const metadata: Metadata = {
     'fc:frame': 'vNext',
     'fc:frame:image': 'https://i.imgur.com/33rSf59.png',
   },
+  openGraph: {
+    images: ['https://i.imgur.com/33rSf59.png'], 
+  },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body>
