@@ -21,14 +21,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        {/* Required for Frames v2 */}
-        <meta name="fc:frame" content="vNext" />
-        <meta name="fc:frame:image" content="https://i.imgur.com/33rSf59.png" />
-        <meta property="og:image" content="https://i.imgur.com/33rSf59.png" />
-        {/* ...any other meta tags */}
-      </head>
-      <body>{children}</body>
-    </html>
+    <head>
+      <title>My App Title</title>
+      <meta name="description" content="This is my app" />
+      <meta name="fc:frame" content="vNext" />
+      <meta name="fc:frame:image" content="https://i.imgur.com/33rSf59.png" />
+      <meta property="og:image" content="https://i.imgur.com/33rSf59.png" />
+    </head>
+    <body>{children}</body>
+  </html>
   );
 }
