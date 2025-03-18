@@ -21,9 +21,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <Providers>{children}</Providers>
-      </body>
+      <head>
+        {/* Required for Frames v2 */}
+        <meta name="fc:frame" content="vNext" />
+        <meta name="fc:frame:image" content="https://i.imgur.com/33rSf59.png" />
+        <meta property="og:image" content="https://i.imgur.com/33rSf59.png" />
+        {/* ...any other meta tags */}
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
